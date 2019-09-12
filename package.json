@@ -25,6 +25,7 @@
     "wdio-cucumberjs-json-reporter": "^1.1.1"
   },
   "dependencies": {
+    "@types/cucumber": "^4.0.7",
     "cucumber": "^5.1.0"
   }
 }

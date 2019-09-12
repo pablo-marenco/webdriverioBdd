@@ -6,10 +6,10 @@ exports.config = {
   //
   // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
   // on a remote machine).
-  runner: 'local',
+  runner: "local",
   //
   // Override default path ('/wd/hub') for chromedriver service.
-  path: '/',
+  path: "/",
   //
   // ==================
   // Specify Test Files
@@ -19,9 +19,7 @@ exports.config = {
   // NPM script (see https://docs.npmjs.com/cli/run-script) then the current working
   // directory is where your package.json resides, so `wdio` will be called from there.
   //
-  specs: [
-    './test/e2e/features/*.feature'
-  ],
+  specs: ["./test/e2e/features/*.feature"],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -48,18 +46,20 @@ exports.config = {
   // Sauce Labs platform configurator - a great tool to configure your capabilities:
   // https://docs.saucelabs.com/reference/platforms-configurator
   //
-  capabilities: [{
-    // maxInstances can get overwritten per capability. So if you have an in-house Selenium
-    // grid with only 5 firefox instances available you can make sure that not more than
-    // 5 instances get started at a time.
-    maxInstances: 5,
-    //
-    browserName: 'chrome',
-    // If outputDir is provided WebdriverIO can capture driver session logs
-    // it is possible to configure which logTypes to include/exclude.
-    // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
-    // excludeDriverLogs: ['bugreport', 'server'],
-  }],
+  capabilities: [
+    {
+      // maxInstances can get overwritten per capability. So if you have an in-house Selenium
+      // grid with only 5 firefox instances available you can make sure that not more than
+      // 5 instances get started at a time.
+      maxInstances: 5,
+      //
+      browserName: "chrome"
+      // If outputDir is provided WebdriverIO can capture driver session logs
+      // it is possible to configure which logTypes to include/exclude.
+      // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
+      // excludeDriverLogs: ['bugreport', 'server'],
+    }
+  ],
   //
   // ===================
   // Test Configurations
@@ -67,7 +67,7 @@ exports.config = {
   // Define all options that are relevant for the WebdriverIO instance here
   //
   // Level of logging verbosity: trace | debug | info | warn | error | silent
-  logLevel: 'info',
+  logLevel: "info",
   //
   // Set specific log levels per logger
   // loggers:
@@ -91,7 +91,7 @@ exports.config = {
   // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
   // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
   // gets prepended directly.
-  baseUrl: 'http://localhost',
+  baseUrl: "http://localhost",
   //
   // Default timeout for all waitFor* commands.
   waitforTimeout: 10000,
@@ -107,7 +107,12 @@ exports.config = {
   // Services take over a specific job you don't want to take care of. They enhance
   // your test setup with almost no effort. Unlike plugins, they don't add new
   // commands. Instead, they hook themselves up into the test process.
-  services: ['selenium-standalone', 'chromedriver', 'devtools', 'firefox-profile'],
+  services: [
+    // "selenium-standalone"
+    // "chromedriver"
+    // "devtools"
+    "firefox-profile"
+  ],
 
   // Framework you want to run your specs with.
   // The following are supported: Mocha, Jasmine, and Cucumber
@@ -115,7 +120,7 @@ exports.config = {
   //
   // Make sure you have the wdio adapter package for the specific framework installed
   // before running any tests.
-  framework: 'cucumber',
+  framework: "cucumber",
   //
   // The number of times to retry the entire specfile when it fails as a whole
   // specFileRetries: 1,
@@ -127,21 +132,21 @@ exports.config = {
   //
   // If you are using Cucumber you need to specify the location of your step definitions.
   cucumberOpts: {
-    require: ['./test/e2e/steps/*.ts'],        // <string[]> (file/dir) require files before executing features
-    backtrace: false,   // <boolean> show full backtrace for errors
-    requireModule: [],  // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
-    dryRun: false,      // <boolean> invoke formatters without executing steps
-    failFast: false,    // <boolean> abort the run on first failure
-    format: ['pretty'], // <string[]> (type[:path]) specify the output format, optionally supply PATH to redirect formatter output (repeatable)
-    colors: true,       // <boolean> disable colors in formatter output
-    snippets: true,     // <boolean> hide step definition snippets for pending steps
-    source: true,       // <boolean> hide source uris
-    profile: [],        // <string[]> (name) specify the profile to use
-    strict: false,      // <boolean> fail if there are any undefined or pending steps
-    tagExpression: '',  // <string> (expression) only execute the features or scenarios with tags matching the expression
-    timeout: 60000,     // <number> timeout for step definitions
-    ignoreUndefinedDefinitions: false, // <boolean> Enable this config to treat undefined definitions as warnings.
-  },
+    require: ["./test/e2e/steps/*.ts"], // <string[]> (file/dir) require files before executing features
+    backtrace: false, // <boolean> show full backtrace for errors
+    requireModule: [], // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
+    dryRun: false, // <boolean> invoke formatters without executing steps
+    failFast: false, // <boolean> abort the run on first failure
+    format: ["pretty"], // <string[]> (type[:path]) specify the output format, optionally supply PATH to redirect formatter output (repeatable)
+    colors: true, // <boolean> disable colors in formatter output
+    snippets: true, // <boolean> hide step definition snippets for pending steps
+    source: true, // <boolean> hide source uris
+    profile: [], // <string[]> (name) specify the profile to use
+    strict: false, // <boolean> fail if there are any undefined or pending steps
+    tagExpression: "", // <string> (expression) only execute the features or scenarios with tags matching the expression
+    timeout: 60000, // <number> timeout for step definitions
+    ignoreUndefinedDefinitions: false // <boolean> Enable this config to treat undefined definitions as warnings.
+  }
 
   //
   // =====
@@ -250,10 +255,10 @@ exports.config = {
   // onComplete: function(exitCode, config, capabilities, results) {
   // },
   /**
-  * Gets executed when a refresh happens.
-  * @param {String} oldSessionId session ID of the old session
-  * @param {String} newSessionId session ID of the new session
-  */
+   * Gets executed when a refresh happens.
+   * @param {String} oldSessionId session ID of the old session
+   * @param {String} newSessionId session ID of the new session
+   */
   //onReload: function(oldSessionId, newSessionId) {
   //}
-}
+};
