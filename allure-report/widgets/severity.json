@@ -1,61 +1,61 @@
 [ {
-  "uid" : "3e734ffab4596c8e",
-  "name" : "Given I am on the search page",
-  "time" : {
-    "start" : 1568399152339,
-    "stop" : 1568399153670,
-    "duration" : 1331
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f5d627d8940434fb",
+  "uid" : "d166a9fd1963bc09",
   "name" : "Then I should see cats content",
   "time" : {
-    "start" : 1568399150468,
-    "stop" : 1568399150472,
-    "duration" : 4
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "b6a03cd5a904effd",
-  "name" : "When I search for cats",
-  "time" : {
-    "start" : 1568399150419,
-    "stop" : 1568399150468,
-    "duration" : 49
+    "start" : 1568400667720,
+    "stop" : 1568400667721,
+    "duration" : 1
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "24699d763fe434e8",
-  "name" : "When I search for cats",
-  "time" : {
-    "start" : 1568399153671,
-    "stop" : 1568399153770,
-    "duration" : 99
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b53079b39579c2cd",
+  "uid" : "63195de989e9aa15",
   "name" : "Given I am on the search page",
   "time" : {
-    "start" : 1568399149132,
-    "stop" : 1568399150419,
-    "duration" : 1287
+    "start" : 1568400666249,
+    "stop" : 1568400668805,
+    "duration" : 2556
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "468585bc3c4a17f8",
+  "uid" : "4db3e78b91def1d6",
+  "name" : "Given I am on the search page",
+  "time" : {
+    "start" : 1568400662276,
+    "stop" : 1568400667625,
+    "duration" : 5349
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8ab7e7701b23b093",
   "name" : "Then I should see cats content",
   "time" : {
-    "start" : 1568399153770,
-    "stop" : 1568399153774,
-    "duration" : 4
+    "start" : 1568400668857,
+    "stop" : 1568400668858,
+    "duration" : 1
   },
-  "status" : "failed",
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9d212c3c42a86eaf",
+  "name" : "When I search for cats",
+  "time" : {
+    "start" : 1568400668805,
+    "stop" : 1568400668857,
+    "duration" : 52
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fda4ca7b25e43c21",
+  "name" : "When I search for cats",
+  "time" : {
+    "start" : 1568400667625,
+    "stop" : 1568400667720,
+    "duration" : 95
+  },
+  "status" : "passed",
   "severity" : "normal"
 } ]
