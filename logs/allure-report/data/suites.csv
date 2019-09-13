@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Sep 13 14:53:26 COT 2019","Fri Sep 13 14:53:28 COT 2019","1688","","Webtest: web has header","","Webtest: web has header","Given I am on the search page","Given I am on the search page",""
+"passed","Fri Sep 13 14:53:28 COT 2019","Fri Sep 13 14:53:28 COT 2019","1","","Webtest: web has header","","Webtest: web has header","Then I should see cats content","Then I should see cats content",""
+"passed","Fri Sep 13 14:53:24 COT 2019","Fri Sep 13 14:53:24 COT 2019","59","","Webtest: web has header","","Webtest: web has header","When I search for cats","When I search for cats",""
+"passed","Fri Sep 13 14:53:24 COT 2019","Fri Sep 13 14:53:24 COT 2019","1","","Webtest: web has header","","Webtest: web has header","Then I should see cats content","Then I should see cats content",""
+"passed","Fri Sep 13 14:53:23 COT 2019","Fri Sep 13 14:53:24 COT 2019","1596","","Webtest: web has header","","Webtest: web has header","Given I am on the search page","Given I am on the search page",""
+"passed","Fri Sep 13 14:53:28 COT 2019","Fri Sep 13 14:53:28 COT 2019","93","","Webtest: web has header","","Webtest: web has header","When I search for cats","When I search for cats",""

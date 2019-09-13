@@ -13,7 +13,7 @@
     "test:lint": "eslint 'src/**/*.js' 'test/**/*.js!(setup.js)'",
     "test:unit": "jest --config=jest.json --detectOpenHandles",
     "test:features": "npm run local-webserver & (wdio wdio.BUILD.conf.js; wdio_ret=$?; forever stopall; exit $wdio_ret)",
-    "test:report": "allure generate ./allure-results --clean && allure open"
+    "test:report": "allure generate ./logs/allure-results -o ./logs/allure-report --clean && allure open ./logs/allure-report"
   },
   "keywords": [],
   "author": "",

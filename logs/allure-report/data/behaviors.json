@@ -1,0 +1,83 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Given I am on the search page",
+    "uid" : "5998099183a26cba",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1568404403282,
+      "stop" : 1568404404878,
+      "duration" : 1596
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "firefox" ]
+  }, {
+    "name" : "When I search for cats",
+    "uid" : "77ba5c9aa47f26ef",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1568404404878,
+      "stop" : 1568404404937,
+      "duration" : 59
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "firefox" ]
+  }, {
+    "name" : "Then I should see cats content",
+    "uid" : "ab66766fdbff7950",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1568404404937,
+      "stop" : 1568404404938,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "firefox" ]
+  }, {
+    "name" : "Given I am on the search page",
+    "uid" : "ffe920ad0a35421a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1568404406613,
+      "stop" : 1568404408301,
+      "duration" : 1688
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When I search for cats",
+    "uid" : "49830192b2c10052",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1568404408301,
+      "stop" : 1568404408394,
+      "duration" : 93
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then I should see cats content",
+    "uid" : "269b1121c5792228",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1568404408394,
+      "stop" : 1568404408395,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  } ]
+}

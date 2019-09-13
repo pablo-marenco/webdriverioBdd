@@ -1,0 +1,89 @@
+{
+  "uid" : "ffe920ad0a35421a",
+  "name" : "Given I am on the search page",
+  "fullName" : "Webtest: web has header.Given I am on the search page",
+  "historyId" : "d6be9edec331001217b120367cd3ca8c",
+  "time" : {
+    "start" : 1568404406613,
+    "stop" : 1568404408301,
+    "duration" : 1688
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/url",
+      "time" : {
+        "start" : 1568404406618,
+        "stop" : 1568404408300,
+        "duration" : 1682
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "380786eb7edba06a",
+        "name" : "Request",
+        "source" : "380786eb7edba06a.json",
+        "type" : "application/json",
+        "size" : 40
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Webtest: web has header"
+  }, {
+    "name" : "testClass",
+    "value" : "Webtest: web has header"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given I am on the search page"
+  }, {
+    "name" : "package",
+    "value" : "Webtest: web has header"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ffe920ad0a35421a.json",
+  "parameterValues" : [ "chrome" ]
+}
