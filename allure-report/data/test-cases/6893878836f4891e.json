@@ -1,0 +1,56 @@
+{
+  "uid" : "6893878836f4891e",
+  "name" : "Then I should see cats content",
+  "fullName" : "Webtest: web has header.Then I should see cats content",
+  "historyId" : "60a14c68c8ff71ba694069e7fa1b1631",
+  "time" : {
+    "start" : 1568399019397,
+    "stop" : 1568399019398,
+    "duration" : 1
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Webtest: web has header"
+  }, {
+    "name" : "testClass",
+    "value" : "Webtest: web has header"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then I should see cats content"
+  }, {
+    "name" : "package",
+    "value" : "Webtest: web has header"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6893878836f4891e.json",
+  "parameterValues" : [ "chrome" ]
+}

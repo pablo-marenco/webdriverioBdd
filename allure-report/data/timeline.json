@@ -1,0 +1,247 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "1-0",
+    "children" : [ {
+      "name" : "Then I should see cats content",
+      "uid" : "f5d627d8940434fb",
+      "parentUid" : "5d884c24784638b93056bad95e3212e7",
+      "status" : "failed",
+      "time" : {
+        "start" : 1568399150468,
+        "stop" : 1568399150472,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox" ]
+    }, {
+      "name" : "Given I am on the search page",
+      "uid" : "5e32a2afa3b7e4a3",
+      "parentUid" : "5d884c24784638b93056bad95e3212e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568398485927,
+        "stop" : 1568398487340,
+        "duration" : 1413
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox" ]
+    }, {
+      "name" : "Then I should see cats content",
+      "uid" : "755dc1820451105e",
+      "parentUid" : "5d884c24784638b93056bad95e3212e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568398487397,
+        "stop" : 1568398487398,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox" ]
+    }, {
+      "name" : "Given I am on the search page",
+      "uid" : "cde007388585b4a1",
+      "parentUid" : "5d884c24784638b93056bad95e3212e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568399014973,
+        "stop" : 1568399016487,
+        "duration" : 1514
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox" ]
+    }, {
+      "name" : "Then I should see cats content",
+      "uid" : "2d9f7e8659d6f644",
+      "parentUid" : "5d884c24784638b93056bad95e3212e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568399016547,
+        "stop" : 1568399016549,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox" ]
+    }, {
+      "name" : "Given I am on the search page",
+      "uid" : "b53079b39579c2cd",
+      "parentUid" : "5d884c24784638b93056bad95e3212e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568399149132,
+        "stop" : 1568399150419,
+        "duration" : 1287
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox" ]
+    }, {
+      "name" : "When I search for cats",
+      "uid" : "b6a03cd5a904effd",
+      "parentUid" : "5d884c24784638b93056bad95e3212e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568399150419,
+        "stop" : 1568399150468,
+        "duration" : 49
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox" ]
+    }, {
+      "name" : "When I search for cats",
+      "uid" : "ecb5b876c8fca66e",
+      "parentUid" : "5d884c24784638b93056bad95e3212e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568399016487,
+        "stop" : 1568399016547,
+        "duration" : 60
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox" ]
+    }, {
+      "name" : "When I search for cats",
+      "uid" : "fc4b613fa7902692",
+      "parentUid" : "5d884c24784638b93056bad95e3212e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568398487341,
+        "stop" : 1568398487397,
+        "duration" : 56
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "firefox" ]
+    } ],
+    "uid" : "5d884c24784638b93056bad95e3212e7"
+  }, {
+    "name" : "0-0",
+    "children" : [ {
+      "name" : "When I search for cats",
+      "uid" : "efca7246a556dc5d",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568399019292,
+        "stop" : 1568399019397,
+        "duration" : 105
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "When I search for cats",
+      "uid" : "39122dcce2e32202",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568398490610,
+        "stop" : 1568398490716,
+        "duration" : 106
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Given I am on the search page",
+      "uid" : "dc794756c091d827",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568399017888,
+        "stop" : 1568399019292,
+        "duration" : 1404
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Given I am on the search page",
+      "uid" : "ab4d67411b23ed7e",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568398489215,
+        "stop" : 1568398490610,
+        "duration" : 1395
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Given I am on the search page",
+      "uid" : "3e734ffab4596c8e",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568399152339,
+        "stop" : 1568399153670,
+        "duration" : 1331
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Then I should see cats content",
+      "uid" : "468585bc3c4a17f8",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "failed",
+      "time" : {
+        "start" : 1568399153770,
+        "stop" : 1568399153774,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Then I should see cats content",
+      "uid" : "c33fb9748b83305f",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568398490716,
+        "stop" : 1568398490717,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Then I should see cats content",
+      "uid" : "6893878836f4891e",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568399019397,
+        "stop" : 1568399019398,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "When I search for cats",
+      "uid" : "24699d763fe434e8",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568399153671,
+        "stop" : 1568399153770,
+        "duration" : 99
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome" ]
+    } ],
+    "uid" : "516fe00eea05ad99e936fa729b55eff4"
+  } ]
+}

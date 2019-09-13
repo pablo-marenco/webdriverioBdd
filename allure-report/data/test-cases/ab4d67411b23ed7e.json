@@ -1,0 +1,87 @@
+{
+  "uid" : "ab4d67411b23ed7e",
+  "name" : "Given I am on the search page",
+  "fullName" : "Webtest: web has header.Given I am on the search page",
+  "historyId" : "d6be9edec331001217b120367cd3ca8c",
+  "time" : {
+    "start" : 1568398489215,
+    "stop" : 1568398490610,
+    "duration" : 1395
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/url",
+      "time" : {
+        "start" : 1568398489219,
+        "stop" : 1568398490609,
+        "duration" : 1390
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4b723ac7496296cc",
+        "name" : "Request",
+        "source" : "4b723ac7496296cc.json",
+        "type" : "application/json",
+        "size" : 40
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Webtest: web has header"
+  }, {
+    "name" : "testClass",
+    "value" : "Webtest: web has header"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given I am on the search page"
+  }, {
+    "name" : "package",
+    "value" : "Webtest: web has header"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ab4d67411b23ed7e.json",
+  "parameterValues" : [ "chrome" ]
+}

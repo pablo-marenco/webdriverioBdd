@@ -25,6 +25,11 @@ env-config.js
 .env.test.local
 .env.production.local
 
+#reports
+/allure-*
+/drivers
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+wdio.log*

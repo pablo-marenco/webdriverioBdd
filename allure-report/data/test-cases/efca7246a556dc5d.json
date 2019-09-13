@@ -1,0 +1,56 @@
+{
+  "uid" : "efca7246a556dc5d",
+  "name" : "When I search for cats",
+  "fullName" : "Webtest: web has header.When I search for cats",
+  "historyId" : "424de14b22489010bec56640eb99a392",
+  "time" : {
+    "start" : 1568399019292,
+    "stop" : 1568399019397,
+    "duration" : 105
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Webtest: web has header"
+  }, {
+    "name" : "testClass",
+    "value" : "Webtest: web has header"
+  }, {
+    "name" : "testMethod",
+    "value" : "When I search for cats"
+  }, {
+    "name" : "package",
+    "value" : "Webtest: web has header"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "efca7246a556dc5d.json",
+  "parameterValues" : [ "chrome" ]
+}

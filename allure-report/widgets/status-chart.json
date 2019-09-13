@@ -1,0 +1,61 @@
+[ {
+  "uid" : "24699d763fe434e8",
+  "name" : "When I search for cats",
+  "time" : {
+    "start" : 1568399153671,
+    "stop" : 1568399153770,
+    "duration" : 99
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e734ffab4596c8e",
+  "name" : "Given I am on the search page",
+  "time" : {
+    "start" : 1568399152339,
+    "stop" : 1568399153670,
+    "duration" : 1331
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f5d627d8940434fb",
+  "name" : "Then I should see cats content",
+  "time" : {
+    "start" : 1568399150468,
+    "stop" : 1568399150472,
+    "duration" : 4
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "b53079b39579c2cd",
+  "name" : "Given I am on the search page",
+  "time" : {
+    "start" : 1568399149132,
+    "stop" : 1568399150419,
+    "duration" : 1287
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b6a03cd5a904effd",
+  "name" : "When I search for cats",
+  "time" : {
+    "start" : 1568399150419,
+    "stop" : 1568399150468,
+    "duration" : 49
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "468585bc3c4a17f8",
+  "name" : "Then I should see cats content",
+  "time" : {
+    "start" : 1568399153770,
+    "stop" : 1568399153774,
+    "duration" : 4
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

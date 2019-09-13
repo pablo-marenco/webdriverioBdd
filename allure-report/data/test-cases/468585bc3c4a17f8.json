@@ -1,0 +1,80 @@
+{
+  "uid" : "468585bc3c4a17f8",
+  "name" : "Then I should see cats content",
+  "fullName" : "Webtest: web has header.Then I should see cats content",
+  "historyId" : "60a14c68c8ff71ba694069e7fa1b1631",
+  "time" : {
+    "start" : 1568399153770,
+    "stop" : 1568399153774,
+    "duration" : 4
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 1 to equal 2",
+  "statusTrace" : "AssertionError: expected 1 to equal 2\n                    at World.equal (C:\\Users\\pablo.agudelo\\Documents\\Study\\webdriverio\\WebDriverIO\\src\\test\\steps/webtest.js:15:16)\n                    at C:\\Users\\pablo.agudelo\\Documents\\Study\\webdriverio\\WebDriverIO\\node_modules\\@wdio\\sync\\build\\runFnInFiberContext.js:16:27\n                    at World.executeSync (C:\\Users\\pablo.agudelo\\Documents\\Study\\webdriverio\\WebDriverIO\\node_modules\\@wdio\\sync\\build\\index.js:59:14)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Webtest: web has header"
+  }, {
+    "name" : "testClass",
+    "value" : "Webtest: web has header"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then I should see cats content"
+  }, {
+    "name" : "package",
+    "value" : "Webtest: web has header"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6893878836f4891e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568399019397,
+        "stop" : 1568399019398,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c33fb9748b83305f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1568398490716,
+        "stop" : 1568398490717,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "468585bc3c4a17f8.json",
+  "parameterValues" : [ "chrome" ]
+}

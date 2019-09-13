@@ -12,5 +12,5 @@ When(/^I search for cats$/, function() {
 })
 
 Then(/^I should see cats content$/, function() {
-  expect(1).to.equal(1)
+  expect(1).to.equal(2)
 })

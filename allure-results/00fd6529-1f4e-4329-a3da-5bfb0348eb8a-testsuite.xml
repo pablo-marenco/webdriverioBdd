@@ -1,0 +1,56 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1568399149126' stop='1568399150473'>
+    <name>Webtest: web has header</name>
+    <title>Webtest: web has header</title>
+    <test-cases>
+        <test-case start='1568399149132' status='passed' stop='1568399150419'>
+            <name>Given I am on the search page</name>
+            <title>Given I am on the search page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1568399150419' status='passed' stop='1568399150468'>
+            <name>When I search for cats</name>
+            <title>When I search for cats</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1568399150468' status='failed' stop='1568399150472'>
+            <name>Then I should see cats content</name>
+            <title>Then I should see cats content</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 1 to equal 2</message>
+                <stack-trace>AssertionError: expected 1 to equal 2
+                    at World.equal (C:\Users\pablo.agudelo\Documents\Study\webdriverio\WebDriverIO\src\test\steps/webtest.js:15:16)
+                    at C:\Users\pablo.agudelo\Documents\Study\webdriverio\WebDriverIO\node_modules\@wdio\sync\build\runFnInFiberContext.js:16:27
+                    at World.executeSync (C:\Users\pablo.agudelo\Documents\Study\webdriverio\WebDriverIO\node_modules\@wdio\sync\build\index.js:59:14)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

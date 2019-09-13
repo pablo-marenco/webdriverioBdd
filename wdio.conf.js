@@ -1,5 +1,5 @@
 exports.config = {
-  specs: ["./src/test/features/**/*.feature"],
+  specs: ['./src/test/features/**/*.feature'],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -8,42 +8,73 @@ exports.config = {
   capabilities: [
     {
       maxInstances: 5,
-      browserName: "chrome"
+      browserName: 'chrome',
+      'goog:chromeOptions': {
+        // to run chrome headless the following flags are required
+        // (see https://developers.google.com/web/updates/2017/04/headless-chrome)
+        args: ['--headless', '--disable-gpu']
+      }
     },
     {
       maxInstances: 5,
-      browserName: "firefox"
+      browserName: 'firefox',
+      'moz:firefoxOptions': {
+        // to run chrome headless the following flags are required
+        // (see https://developers.google.com/web/updates/2017/04/headless-chrome)
+        args: ['-headless']
+      }
     }
+    /*     {
+      maxInstances: 5,
+      browserName: 'internet explorer'
+    } */
   ],
-  logLevel: "info",
+  logLevel: 'error',
   bail: 0,
-  baseUrl: "http://localhost",
+  baseUrl: 'http://localhost',
   waitforTimeout: 10000,
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
   services: [
-    "selenium-standalone"
+    'selenium-standalone'
     // "chromedriver"
     // "devtools"
     // "firefox-profile"
   ],
-  framework: "cucumber",
+  /* seleniumArgs: {
+    javaArgs: [
+      '-Dwebdriver.ie.driver=C:\\Users\\pablo.agudelo\\Documents\\Study\\webdriverio\\WebDriverIO\\drivers\\IEDriverServer_Win32_3.14.0\\IEDriverServer.exe'
+    ]
+  }, */
+  framework: 'cucumber',
   cucumberOpts: {
-    require: ["./src/test/steps/**/*.js"], // <string[]> (file/dir) require files before executing features
+    require: ['./src/test/steps/**/*.js'], // <string[]> (file/dir) require files before executing features
     backtrace: false, // <boolean> show full backtrace for errors
-    requireModule: ["@babel/register"],
+    requireModule: ['@babel/register'],
     failFast: false, // <boolean> abort the run on first failure
     snippets: true, // <boolean> hide step definition snippets for pending steps
     source: true, // <boolean> hide source uris
     profile: [], // <string[]> (name) specify the profile to use
     strict: false, // <boolean> fail if there are any undefined or pending steps
-    tagExpression: "", // <string> (expression) only execute the features or scenarios with tags matching the expression
+    tagExpression: '', // <string> (expression) only execute the features or scenarios with tags matching the expression
     timeout: 20000, // <number> timeout for step definitions
     ignoreUndefinedDefinitions: false, // <boolean> Enable this config to treat undefined definitions as warnings.
     failAmbiguousDefinitions: true,
     name: [],
     snippetSyntax: undefined
-  }
+  },
+
+  reporters: [
+    [
+      'allure',
+      {
+        outputDir: 'allure-results'
+      }
+    ],
+    'spec'
+  ],
+
+  outputDir: './'
 
   //
   // =====
@@ -158,4 +189,4 @@ exports.config = {
    */
   //onReload: function(oldSessionId, newSessionId) {
   //}
-};
+}
