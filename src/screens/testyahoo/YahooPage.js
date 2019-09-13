@@ -21,7 +21,7 @@ class YahooPage extends Page {
 
   open() {
     super.open('https://search.yahoo.com') //provide your additional URL if any. this will append to the baseUrl to form complete URL
-    browser.pause(3000)
+    //browser.pause(3000)
   }
 
   enterText(item) {
