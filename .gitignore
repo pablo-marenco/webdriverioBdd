@@ -8,7 +8,7 @@
 /drivers
 
 # production
-/build
+/lib
 env-config.js
 
 # IDE config
@@ -18,4 +18,5 @@ env-config.js
 .DS_Store
 .env
 
+#logs
 wdio.log*
