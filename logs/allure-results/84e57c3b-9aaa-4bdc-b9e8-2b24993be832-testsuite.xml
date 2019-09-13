@@ -1,0 +1,82 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1568410435918' stop='1568410449673'>
+    <name>Webtest: web has header</name>
+    <title>Webtest: web has header</title>
+    <test-cases>
+        <test-case start='1568410435921' status='passed' stop='1568410438369'>
+            <name>Given I am on the search page</name>
+            <title>Given I am on the search page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='internet explorer'/>
+            </parameters>
+            <steps>
+                <step start='1568410435924' status='passed' stop='1568410438368'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='811be842-e857-4e32-bc14-74d93543bc08-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1568410438370' status='passed' stop='1568410449671'>
+            <name>When I search for cats</name>
+            <title>When I search for cats</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='internet explorer'/>
+            </parameters>
+            <steps>
+                <step start='1568410438372' status='passed' stop='1568410438634'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='3eaca880-85b4-4e36-a624-99b1c2ec9892-attachment.json' type='application/json' size='51'/>
+                        <attachment title='Response' source='a06c2788-3efa-4dfd-8f45-dff3fe05a023-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1568410438637' status='passed' stop='1568410439096'>
+                    <name>POST /session/:sessionId/element/adc33748-8c8e-4aef-b813-1380df2108fd/clear</name>
+                    <title>POST /session/:sessionId/element/adc33748-8c8e-4aef-b813-1380df2108fd/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1568410439100' status='passed' stop='1568410449671'>
+                    <name>POST /session/:sessionId/element/adc33748-8c8e-4aef-b813-1380df2108fd/value</name>
+                    <title>POST /session/:sessionId/element/adc33748-8c8e-4aef-b813-1380df2108fd/value</title>
+                    <attachments>
+                        <attachment title='Request' source='e0da7435-a253-442f-a13c-1cadbdb3a9b8-attachment.json' type='application/json' size='18'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1568410449671' status='passed' stop='1568410449672'>
+            <name>Then I should see cats content</name>
+            <title>Then I should see cats content</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='internet explorer'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

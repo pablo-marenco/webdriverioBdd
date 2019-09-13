@@ -1,0 +1,82 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1568413016446' stop='1568413018280'>
+    <name>Webtest: web has header</name>
+    <title>Webtest: web has header</title>
+    <test-cases>
+        <test-case start='1568413016449' status='passed' stop='1568413018203'>
+            <name>Given I am on the search page</name>
+            <title>Given I am on the search page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1568413016452' status='passed' stop='1568413018202'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='dd887ffc-2e11-41a0-8bd6-f998155024a2-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1568413018203' status='passed' stop='1568413018279'>
+            <name>When I search for cats</name>
+            <title>When I search for cats</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1568413018205' status='passed' stop='1568413018219'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='eb1265dd-c258-4087-9016-34b7d1d42059-attachment.json' type='application/json' size='51'/>
+                        <attachment title='Response' source='9edbdf12-8ee3-499c-b2b2-0ea6b0879645-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1568413018223' status='passed' stop='1568413018244'>
+                    <name>POST /session/:sessionId/element/0.04213608278032632-1/clear</name>
+                    <title>POST /session/:sessionId/element/0.04213608278032632-1/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1568413018246' status='passed' stop='1568413018278'>
+                    <name>POST /session/:sessionId/element/0.04213608278032632-1/value</name>
+                    <title>POST /session/:sessionId/element/0.04213608278032632-1/value</title>
+                    <attachments>
+                        <attachment title='Request' source='11a327f1-9375-4314-bb17-fa866c8155d7-attachment.json' type='application/json' size='37'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1568413018279' status='passed' stop='1568413018279'>
+            <name>Then I should see cats content</name>
+            <title>Then I should see cats content</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

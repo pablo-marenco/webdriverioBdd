@@ -1,0 +1,89 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1568410379738' stop='1568410404482'>
+    <name>Webtest: web has header</name>
+    <title>Webtest: web has header</title>
+    <test-cases>
+        <test-case start='1568410379741' status='passed' stop='1568410384477'>
+            <name>Given I am on the search page</name>
+            <title>Given I am on the search page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='internet explorer'/>
+            </parameters>
+            <steps>
+                <step start='1568410379744' status='passed' stop='1568410384476'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='4d27d363-a7cd-4ea2-ac7b-37af8d6ea975-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1568410384478' status='broken' stop='1568410404480'>
+            <name>When I search for cats</name>
+            <title>When I search for cats</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='internet explorer'/>
+            </parameters>
+            <steps>
+                <step start='1568410384481' status='passed' stop='1568410384838'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='34c6caad-ac55-4ef0-a3ff-1f5b224a5c8e-attachment.json' type='application/json' size='51'/>
+                        <attachment title='Response' source='523cb2ec-6e6d-42d8-bc06-9c24ae50dbf9-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1568410384843' status='passed' stop='1568410385400'>
+                    <name>POST /session/:sessionId/element/c7c7fcf3-d68c-4e16-b708-441961db4313/clear</name>
+                    <title>POST /session/:sessionId/element/c7c7fcf3-d68c-4e16-b708-441961db4313/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1568410385403' status='broken' stop='1568410404480'>
+                    <name>POST /session/:sessionId/element/c7c7fcf3-d68c-4e16-b708-441961db4313/value</name>
+                    <title>POST /session/:sessionId/element/c7c7fcf3-d68c-4e16-b708-441961db4313/value</title>
+                    <attachments>
+                        <attachment title='Request' source='4e5c9ee2-6a34-4de6-9629-7ac48cf37146-attachment.json' type='application/json' size='29'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>function timed out, ensure the promise resolves within 20000 milliseconds</message>
+                <stack-trace>Error: function timed out, ensure the promise resolves within 20000 milliseconds
+                    at Timeout._onTimeout (C:\Users\pablo.agudelo\Documents\Study\webdriverio\WebDriverIO\node_modules\cucumber\lib\user_code_runner.js:81:20)
+                    at listOnTimeout (internal/timers.js:531:17)
+                    at processTimers (internal/timers.js:475:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1568410404481' status='pending' stop='1568410404481'>
+            <name>Then I should see cats content</name>
+            <title>Then I should see cats content</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='internet explorer'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

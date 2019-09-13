@@ -1,0 +1,82 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1568413012470' stop='1568413014110'>
+    <name>Webtest: web has header</name>
+    <title>Webtest: web has header</title>
+    <test-cases>
+        <test-case start='1568413012472' status='passed' stop='1568413014058'>
+            <name>Given I am on the search page</name>
+            <title>Given I am on the search page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox'/>
+            </parameters>
+            <steps>
+                <step start='1568413012475' status='passed' stop='1568413014057'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='c7c06e41-918c-4fef-9178-5d2a9ae454f0-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1568413014058' status='passed' stop='1568413014108'>
+            <name>When I search for cats</name>
+            <title>When I search for cats</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox'/>
+            </parameters>
+            <steps>
+                <step start='1568413014061' status='passed' stop='1568413014073'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='f718e0ee-cf54-44f7-926c-544f20cfd42a-attachment.json' type='application/json' size='51'/>
+                        <attachment title='Response' source='bde80e4f-454f-4d10-90f8-609dbd3db123-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1568413014079' status='passed' stop='1568413014088'>
+                    <name>POST /session/:sessionId/element/d16b79f2-74cd-4e0b-b8e4-7ff768e40fa9/clear</name>
+                    <title>POST /session/:sessionId/element/d16b79f2-74cd-4e0b-b8e4-7ff768e40fa9/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1568413014091' status='passed' stop='1568413014108'>
+                    <name>POST /session/:sessionId/element/d16b79f2-74cd-4e0b-b8e4-7ff768e40fa9/value</name>
+                    <title>POST /session/:sessionId/element/d16b79f2-74cd-4e0b-b8e4-7ff768e40fa9/value</title>
+                    <attachments>
+                        <attachment title='Request' source='80eb89ab-72d7-4204-9aff-08f0399a5422-attachment.json' type='application/json' size='18'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1568413014108' status='passed' stop='1568413014109'>
+            <name>Then I should see cats content</name>
+            <title>Then I should see cats content</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -7,25 +7,42 @@ exports.config = {
     // 'path/to/excluded/files'
   ],
   maxInstances: 10,
+  drivers: {
+    ie: {
+      version: '3.7.0',
+      arch: process.arch,
+      baseURL: 'https://selenium-release.storage.googleapis.com'
+    },
+    edge: {
+      version: '16299'
+    }
+  },
   capabilities: [
-    {
+    /*     {
       maxInstances: 5,
       browserName: 'chrome',
       'goog:chromeOptions': {
         args: ['--headless', '--disable-gpu']
       }
-    },
-    {
+    }, */
+    /*{
       maxInstances: 5,
       browserName: 'firefox',
       'moz:firefoxOptions': {
         args: ['-headless']
       }
-    } /* ,
+    }, */
+    /* {
+      maxInstances: 5,
+      browserName: "safari"
+    } */
     {
       maxInstances: 5,
-      browserName: 'safari'
-    } */
+      browserName: 'internet explorer'
+    },
+    {
+      browserName: 'MicrosoftEdge'
+    }
   ],
   logLevel: 'error',
   bail: 0,
@@ -39,6 +56,19 @@ exports.config = {
     // "devtools"
     // "firefox-profile"
   ],
+  /* seleniumArgs: {
+    javaArgs: [
+      `-Dwebdriver.ie.driver=${join(
+        __dirname,
+        'node_modules/selenium-standalone/.selenium/edgedriver/17134-MicrosoftEdgeDriver.exe'
+      )}`
+    ]
+  }, */
+  seleniumArgs: {
+    javaArgs: [
+      '-Dwebdriver.edge.driver=C:\\Windows\\System32\\MicrosoftWebDriver.exe'
+    ]
+  },
   framework: 'cucumber',
   cucumberOpts: {
     require: ['./src/test/steps/**/*.js'], // <string[]> (file/dir) require files before executing features
