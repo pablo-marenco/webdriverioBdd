@@ -1,5 +1,5 @@
 exports.config = {
-  specs: ["./test/e2e/features/*.feature"],
+  specs: ["./src/test/features/**/*.feature"],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -9,6 +9,10 @@ exports.config = {
     {
       maxInstances: 5,
       browserName: "chrome"
+    },
+    {
+      maxInstances: 5,
+      browserName: "firefox"
     }
   ],
   logLevel: "info",
@@ -25,7 +29,7 @@ exports.config = {
   ],
   framework: "cucumber",
   cucumberOpts: {
-    require: ["./test/e2e/steps/*.ts", "./test/helpers/common.js"], // <string[]> (file/dir) require files before executing features
+    require: ["./src/test/steps/**/*.js"], // <string[]> (file/dir) require files before executing features
     backtrace: false, // <boolean> show full backtrace for errors
     requireModule: ["@babel/register"],
     failFast: false, // <boolean> abort the run on first failure
