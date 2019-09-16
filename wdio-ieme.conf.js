@@ -34,7 +34,7 @@ exports.config = {
     javaArgs: [
       `-Dwebdriver.edge.driver=${join(
         __dirname,
-        "node_modules/selenium-standalone/.selenium/edgedriver/MicrosoftWebDriver.exe"
+        "drivers/MicrosoftWebDriver.exe"
       )}`
     ]
   },
