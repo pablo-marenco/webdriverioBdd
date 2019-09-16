@@ -1,4 +1,4 @@
-import Page from '../page';
+import Page from "../page";
 
 class YahooPage extends Page {
   /**
@@ -6,13 +6,13 @@ class YahooPage extends Page {
    */
 
   get searchInput() {
-    return $('#yschsp')
+    return $("#yschsp");
   }
   get searchButton() {
-    return $('//div[@class="mag-glass"]')
+    return $('//div[@class="mag-glass"]');
   }
   get resultsList() {
-    return $('#results')
+    return $("#results");
   }
 
   /**
@@ -20,23 +20,23 @@ class YahooPage extends Page {
    */
 
   open() {
-    super.open('https://search.yahoo.com') //provide your additional URL if any. this will append to the baseUrl to form complete URL
-    //browser.pause(3000)
+    super.open("https://search.yahoo.com"); //provide your additional URL if any. this will append to the baseUrl to form complete URL
+    browser.pause(3000);
   }
 
   enterText(item) {
-    //this.searchInput.clearElement()
-    this.searchInput.setValue(item)
+    this.searchInput.clearValue();
+    this.searchInput.setValue(item);
   }
 
   search() {
-    this.searchButton.click()
+    this.searchButton.click();
   }
 
   isSearched() {
-    //this.resultsList.clearElement()
-    return this.resultsList.isVisible()
+    this.resultsList.clearValue();
+    return this.resultsList.isVisible();
   }
 }
 
-export default new YahooPage()
+export default new YahooPage();
