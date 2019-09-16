@@ -20,7 +20,10 @@ exports.config = {
       browserName: "MicrosoftEdge"
     },
     {
-      browserName: "internet explorer"
+      browserName: "internet explorer",
+      "se:ieOptions": {
+        nativeEvents: false
+      }
     }
   ],
   logLevel: "error",

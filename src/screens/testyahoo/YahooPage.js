@@ -9,7 +9,7 @@ class YahooPage extends Page {
     return $("#yschsp");
   }
   get searchButton() {
-    return $('//div[@class="mag-glass"]');
+    return $("#sf .sbb");
   }
   get resultsList() {
     return $("#results");
@@ -34,8 +34,7 @@ class YahooPage extends Page {
   }
 
   isSearched() {
-    this.resultsList.clearValue();
-    return this.resultsList.isVisible();
+    return this.resultsList.isDisplayedInViewport();
   }
 }
 
