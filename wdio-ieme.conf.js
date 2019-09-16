@@ -11,16 +11,16 @@ exports.config = {
       baseURL: "https://selenium-release.storage.googleapis.com"
     },
     edge: {
-      version: "16299"
+      version: "16299",
+      arch: process.arch
     }
   },
   capabilities: [
     {
-      maxInstances: 5,
-      browserName: "internet explorer"
+      browserName: "MicrosoftEdge"
     },
     {
-      browserName: "MicrosoftEdge"
+      browserName: "internet explorer"
     }
   ],
   logLevel: "error",
