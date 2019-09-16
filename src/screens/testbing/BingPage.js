@@ -1,18 +1,18 @@
 import Page from "../page";
 
-class GooglePage extends Page {
+class BingPage extends Page {
   /**
    * define elements
    */
 
   get searchInput() {
-    return $(".gLFyf.gsfi");
+    return $("#sb_form_q");
   }
   get searchButton() {
-    return $(".gNO89b");
+    return $("#sb_form_go");
   }
   get resultsList() {
-    return $("#rcnt");
+    return $("#b_results");
   }
 
   /**
@@ -30,7 +30,7 @@ class GooglePage extends Page {
   }
 
   search() {
-    // this.searchButton.click();
+    // this.searchButton.submit();
     browser.keys("\uE007");
   }
 
@@ -39,4 +39,4 @@ class GooglePage extends Page {
   }
 }
 
-export default new GooglePage();
+export default new BingPage();
