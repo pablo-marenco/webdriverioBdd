@@ -1,43 +1,71 @@
-const { join } = require("path");
+const { join } = require('path')
 
 exports.config = {
-  specs: ["./src/test/features/**/*.feature"],
+  specs: ['./src/test/features/**/*.feature'],
   exclude: [],
   maxInstances: 10,
+  drivers: {
+    ie: {
+      version: '3.7.0',
+      arch: process.arch,
+      baseURL: 'https://selenium-release.storage.googleapis.com'
+    },
+    edge: {
+      version: '16299',
+      arch: process.arch
+    }
+  },
   capabilities: [
     {
       maxInstances: 5,
-      browserName: "chrome",
-      "goog:chromeOptions": {
-        args: ["--headless", "--disable-gpu"]
+      browserName: 'chrome',
+      'goog:chromeOptions': {
+        args: ['--headless', '--disable-gpu']
       }
     },
     {
       maxInstances: 5,
-      browserName: "firefox",
-      "moz:firefoxOptions": {
-        args: ["-headless"]
+      browserName: 'firefox',
+      'moz:firefoxOptions': {
+        args: ['-headless']
+      }
+    },
+    {
+      browserName: 'MicrosoftEdge'
+    },
+    {
+      browserName: 'internet explorer',
+      'se:ieOptions': {
+        nativeEvents: false
       }
     }
   ],
-  logLevel: "error",
+  logLevel: 'error',
   bail: 0,
-  baseUrl: "http://localhost",
+  baseUrl: 'http://localhost',
   waitforTimeout: 10000,
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
-  services: ["selenium-standalone"],
-  framework: "cucumber",
+  services: ['selenium-standalone'],
+  seleniumArgs: {
+    javaArgs: [
+      `-Dwebdriver.edge.driver=${join(
+        __dirname,
+        'drivers/MicrosoftWebDriver.exe'
+      )}`
+    ]
+  },
+  framework: 'cucumber',
   cucumberOpts: {
-    require: ["./src/test/steps/**/*.js"],
+    require: ['./src/test/steps/**/*.js'],
     backtrace: false,
-    requireModule: ["@babel/register"],
+    requireModule: ['@babel/register'],
     failFast: false,
     snippets: true,
     source: true,
     profile: [],
     strict: false,
-    tagExpression: "",
+    tagExpression: '',
     timeout: 20000,
     ignoreUndefinedDefinitions: false,
     failAmbiguousDefinitions: true,
@@ -47,13 +75,13 @@ exports.config = {
 
   reporters: [
     [
-      "allure",
+      'allure',
       {
-        outputDir: join(__dirname, "logs/allure-results")
+        outputDir: join(__dirname, 'logs/allure-results')
       }
     ],
-    "spec"
+    'spec'
   ],
 
-  outputDir: join(__dirname, "logs")
-};
+  outputDir: join(__dirname, 'logs')
+}
