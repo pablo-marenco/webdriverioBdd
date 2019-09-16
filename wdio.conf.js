@@ -4,17 +4,6 @@ exports.config = {
   specs: ['./src/test/features/**/*.feature'],
   exclude: [],
   maxInstances: 10,
-  drivers: {
-    ie: {
-      version: '3.7.0',
-      arch: process.arch,
-      baseURL: 'https://selenium-release.storage.googleapis.com'
-    },
-    edge: {
-      version: '16299',
-      arch: process.arch
-    }
-  },
   capabilities: [
     {
       maxInstances: 5,
