@@ -30,17 +30,12 @@ exports.config = {
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
   services: ["selenium-standalone"],
-  /* seleniumArgs: {
-    javaArgs: [
-      `-Dwebdriver.ie.driver=${join(
-        __dirname,
-        "node_modules/selenium-standalone/.selenium/edgedriver/17134-MicrosoftEdgeDriver.exe"
-      )}`
-    ]
-  }, */
   seleniumArgs: {
     javaArgs: [
-      "-Dwebdriver.edge.driver=C:\\Windows\\System32\\MicrosoftWebDriver.exe"
+      `-Dwebdriver.edge.driver=${join(
+        __dirname,
+        "node_modules/selenium-standalone/.selenium/edgedriver/MicrosoftWebDriver.exe"
+      )}`
     ]
   },
   framework: "cucumber",
