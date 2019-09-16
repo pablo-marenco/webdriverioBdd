@@ -4,7 +4,7 @@
 /node_modules
 
 #reports
-/allure-*
+/logs/*
 /drivers
 
 # production
