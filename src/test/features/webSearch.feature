@@ -12,4 +12,3 @@ Feature: WebSearch
             | BrowserName |
             | Yahoo       |
             | Google      |
-            | Bing        |

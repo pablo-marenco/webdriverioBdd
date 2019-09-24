@@ -69,7 +69,24 @@ exports.config = {
         outputDir: join(__dirname, 'logs/allure-results')
       }
     ],
-    'spec'
+    'spec',
+    [
+      'cucumberjs-json',
+      {
+        //jsonFolder: join(__dirname, 'logs/cucumber-json'),
+        outputDir: join(__dirname, 'logs/cucumber-json'),
+        language: 'en',
+        outputFileFormat: function(opts) {
+          return `results-${opts.cid}.${opts.capabilities}.json`
+        }
+      }
+    ],
+    [
+      'json',
+      {
+        outputDir: join(__dirname, 'logs/wdio-jsonReporter')
+      }
+    ]
   ],
 
   outputDir: join(__dirname, 'logs')
